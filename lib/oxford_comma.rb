@@ -1,5 +1,5 @@
 def oxford_comma(array)
-      case array.size do
+      case array.size
             when 2
                   array.join(" and ")
             when 3
@@ -8,7 +8,7 @@ def oxford_comma(array)
                   array.join(", ").push(last)
                   array
             else
-                  array.join(", ") 
+                  array.join(", ")
       end
 
 
