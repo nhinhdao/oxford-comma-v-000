@@ -3,11 +3,8 @@ def oxford_comma(array)
             when 2
                   array.join(" and ")
             when 3
-                  last = array[array.size - 1]
-                  array.pop
+                  array.last = "and #{array.last}"
                   array.join(", ")
-                  array.push(" and #{last}")
-                  array
             else
                   array.join(", ")
       end
